@@ -2,6 +2,7 @@
   height: 100vh;
   position: relative;
   background-color: red;
+  overflow: hidden;
 }
 
 .slider {
@@ -45,6 +46,7 @@
 
 .arrow {
   position: absolute;
+  position: fixed;
   width: 100px;
   height: 100px;
   top: calc(50% - 50px);
