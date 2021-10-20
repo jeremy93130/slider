@@ -1,5 +1,7 @@
 $(function () {
 
+    var slideIndex = 1;
+
     $(function () {
 
         $('.point').click(function () {
@@ -12,13 +14,12 @@ $(function () {
 
     })
 
-
-    $(".right-arrow").click(function (num) {
-        num = num + $(this).index()
-        var arrow = ($(this).index())
-        $("slider").animate({
-            left: arrow * num
-        })
+    $(".right-arrow").click(function () {
+        $(".slider").index() < 1 ?
+            $(".slider").animate({
+                left: ("-100%" * $(".slider").index().length) 
+            }) 
+        : console.log("va chier")    
     })
 
 
